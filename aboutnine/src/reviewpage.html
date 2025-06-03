@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Text and Image Block</title>
+  <style>
+    .text-image-block {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+    }
+
+    .text-content {
+      flex: 1;
+      padding-right: 20px;
+    }
+
+    .text-content h2 {
+      margin-top: 0;
+    }
+
+    .image-content img {
+      max-width: 300px;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .text-image-block {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .text-content {
+        padding-right: 0;
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="text-image-block">
+  <div class="text-content">
+    <h2>Your Title Here</h2>
+    <p>This is a paragraph of text on the left. It can describe something, give information, or be part of a promotional section.</p>
+  </div>
+  <div class="image-content">
+    <img src="your-image.jpg" alt="Description of image">
+  </div>
+</div>
+
+</body>
+</html>
