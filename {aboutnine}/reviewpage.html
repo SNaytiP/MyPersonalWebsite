@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Review Page</title>
+    <style>
+        /* Updated CSS styles */
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #555;
+            text-align: center;
+        }
+
+        .button-container {
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+            button {
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        background-color: #333;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.2 s, transform 0.2 s; /* Add transform transition */
+    }
+
+    button:hover {
+        background-color: #555;
+        transform: scale(1.05); /* Scale up on hover */
+    }
+
+        button:active {
+            transform: scale(0.95); /* Scale down on click */
+        }
+    </style>
+</head>
+<body>
+    <h1>Review Page</h1>
+    <p>Welcome to the review page!</p>
+    <div class="button-container">
+        <button onclick="location.href='index.html'">Go to Main Page</button>
+    </div>
+</body>
+</html>
