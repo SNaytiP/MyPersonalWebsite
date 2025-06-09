@@ -7,11 +7,11 @@
     <title>About Me</title>
   </head>
 
-  <!-- main page -->
-  <body class="relative overflow-x-hidden">
-    <!-- Create block -->
-    <div class="bg-white bg-cover bg-center bg-no-repeat">
-      <!--
+<!-- Main Page -->
+<body class="relative overflow-x-hidden">
+  <!-- Build First Page -->
+  <div class="bg-white bg-cover bg-center bg-no-repeat">
+    <!--
     This is the header section of the page
     It will contain the navigation bar and the main title of the page.   
     The navigation bar will have the following links:
@@ -19,115 +19,59 @@
       - Portfolio this button will scroll to portfolio section
       - Contract this button will scroll to contact section
       - Review this button will lead to review page-->
-      <header class="absolute inset-x-0 top-0 z-50">
-        <nav
-          class="flex items-center justify-between p-6 lg:px-8"
-          aria-label="Global"
-        >
-          <!-- This div contain clickable logo -->
-          <div class="flex lg:flex-1">
-            <!-- 
+    <header class="absolute bg-center bg-gray-800/25 bg-opca inset-x-0 top-0 z-50">
+      <nav class="fixed flex bg-center bg-gray-950/75 bg-opca inset-x-0 top-0 z-50justify-between p-6 lg:px-8" aria-label="Global">
+      <!-- This div contain clickable logo -->
+      <div class="flex lg:flex-1">
+        <!-- 
           This anchor tag (<a>) wraps an image (<img>) to make it clickable.
           When the image is clicked, the page will refresh due to the 'onclick="location.reload();"' attribute.
           The image displays the logo with specified height and width classes.
         -->
-            <a href="#" onclick="location.reload();">
-              <img
-                src="/img/aboutnine_logo.png"
-                alt="Logo"
-                class="h-8 w-auto"
-              />
-            </a>
-          </div>
-          <div class="flex lg:hidden"></div>
-          <div class="hidden lg:flex lg:gap-x-12">
-            <a
-              href="#about"
-              class="text-sm/6 font-bold text-white text-shadow-lg/30"
-              >About me</a
-            >
-            <a
-              href="#portfolio"
-              class="text-sm/6 font-bold text-white text-shadow-lg/30"
-              >Portfolio</a
-            >
-            <a
-              href="#contact"
-              class="text-sm/6 font-bold text-white text-shadow-lg/30"
-              >Contact</a
-            >
-            <a
-              href="reviewpage.html"
-              class="text-sm/6 font-bold text-white text-shadow-lg/30"
-              >Review</a
-            >
-          </div>
-          <div class="hidden lg:flex lg:flex-1 lg:justify-end"></div>
-        </nav>
-      </header>
-      <!-- This div contian wallpaper and text for user first sight -->
-      <div class="relative isolate px-6 pt-14 lg:px-8">
-        <div
-          class="absolute inset-x-0 -top-40 -z-10 transform-gpu blur-3xl sm:-top-80"
-          aria-hidden="true"
-        ></div>
-        <!-- Responsive GIF wallpaper -->
-        <div
-          class="absolute inset-0 w-full h-full bg-fixed bg-center bg-cover z-0"
-          style="background-image: url('/img/ponyo-moon.gif')"
-        ></div>
-        <!-- Welcome text in middle page -->
-        <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56 z-20 relative">
-          <div class="text-center">
-            <h1
-              class="text-5xl font-bold tracking-tight text-balance text-white text-shadow-lg/30 sm:text-7xl"
-            >
-              Welcome to aboutnine
-            </h1>
-            <p
-              class="mt-8 text-lg font-semibold text-pretty text-white sm:text-xl/8 text-shadow-lg/30"
-            >
-              This is my personal website , My name is Naytipat Phothipan but
-              You can call me nine ,Nice to meet you.
-            </p>
-          </div>
+        <a href="#" onclick="location.reload();">
+        <img src="/img/aboutnine_logo.png" alt="Logo" class="h-8 w-auto" />
+        </a>
+      </div>
+      <div class="flex lg:hidden">
+      </div>
+      <div class="hidden lg:flex lg:gap-x-12">
+        <a href="#about" class="nav-link text-sm/6 font-bold text-white text-shadow-lg/30 transition-transform duration-200 ease-in-out hover:scale-125">About me</a>
+        <a href="#portfolio" class="nav-link text-sm/6 font-bold text-white text-shadow-lg/30 transition-transform duration-200 ease-in-out hover:scale-125">Portfolio</a>
+        <a href="#contact" class="nav-link text-sm/6 font-bold text-white text-shadow-lg/30 transition-transform duration-200 ease-in-out hover:scale-125">Contact</a>
+        <a href="reviewpage.html" class="nav-link text-sm/6 font-bold text-white text-shadow-lg/30 transition-transform duration-200 ease-in-out hover:scale-125">Review</a>
+      </div>
+      <div class="hidden lg:flex lg:flex-1 lg:justify-end"></div>
+      </nav>
+    </header>
+    <!-- "About me" section -->
+    <div class="relative isolate px-6 pt-14 lg:px-8">
+      <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu blur-3xl sm:-top-80" aria-hidden="true">
+      </div>
+      <!-- Responsive GIF wallpaper -->
+      <div class="absolute inset-0 w-full h-full bg-fixed bg-center bg-cover z-0" style="background-image: url('/img/ponyo-moon.gif');"></div>
+      <!-- Welcome text in middle page -->
+      <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56 z-20 relative">
+        <div class="text-center">
+          <h1 class="text-5xl font-bold tracking-tight text-balance text-white text-shadow-lg/30 sm:text-7xl">Welcome to aboutnine</h1>
+          <p class="mt-8 text-lg font-semibold text-pretty text-white sm:text-xl/8 text-shadow-lg/30">This is my personal website , My name is Naytipat Phothipan but You can call me nine ,Nice to meet you.</p>
         </div>
       </div>
     </div>
-    <!-- This sectiopn is about my own information like what i like , where am i study and what i interested to -->
-    <section id="about">
-      <div class="bg-gray-100 relative">
-        <!-- Aboutme wallpaper image -->
-        <img
-          src="/img/Aboutme_wallpaper.png"
-          alt="About Me Wallpaper"
-          class="absolute inset-0 w-screen h-screen object-cover object-center z-0"
-          style="opacity: 0.2"
-        />
-        <!-- Container for centering content and setting max width -->
-        <div
-          class="mx-auto max-w-2xl py-20 sm:py-28 lg:py-36 hidden lg:flex items-center gap-8 lg:gap-x-12 space-x-8 h-screen z-20 relative"
-        >
-          <!-- Image next to the text -->
-          <img
-            src="/img/naytipat_pic_01.jpg"
-            alt="Naytipat Photo"
-            class="w-20 h-20 object-cover rounded-full shadow-lg"
-            width="200"
-            height="200"
-          />
-          <!-- Text content -->
-          <div>
-            <h2 class="text-3xl font-semibold text-slate-700">About me</h2>
-            <p class="mt-6 text-lg text-gray-700">
-              Hi my name is Naytipat Phothipan but You can call me nine.
-              Enthusiastic Computer Engineering student interested in turning
-              data into meaningful insights, building efficient data pipelines,
-              and gaining hands-on experience with cloud infrastructure and
-              network systems.
-            </p>
-          </div>
+  </div>
+  <!-- This sectiopn is about my own information like what i like , where am i study and what i interested to -->
+  <section id="about">
+    <div class="bg-gray-100 relative ">
+      <!-- Aboutme wallpaper image -->
+      <img src="/img/Aboutme_wallpaper.png" alt="About Me Wallpaper" class="absolute inset-0 w-screen h-screen object-cover object-center z-0" style="opacity: 0.2;"/>
+      <!-- Container for centering content and setting max width -->
+      <div class="mx-auto max-w-6xl py-32 sm:py-40 lg:py-0 flex items-center gap-24 lg:gap-x-24 min-h-screen z-20 relative">
+        <!-- Text content -->
+        <div class="flex-1 bg-center bg-slate-950/80 p-14 rounded-2xl shadow-2xl">
+          <h2 class="text-4xl font-bold text-gray-200">"About me"</h2>
+          <p class="mt-8 text-xl text-gray-200">Hi my name is Naytipat Phothipan but You can call me nine. Enthusiastic Computer Engineering student interested in turning data into meaningful insights, building efficient data pipelines, and gaining hands-on experience with cloud infrastructure and network systems.</p>
         </div>
+        <!-- Image next to the text -->
+        <img src="/img/naytipat_pic_01.jpg" alt="Naytipat Photo" class="w-150 h-150 object-cover rounded-xl shadow-2xl">
       </div>
     </section>
   </body>
