@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="scroll-smooth" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,6 +11,7 @@
 <body class="relative overflow-x-hidden">
 
   <!-- This is the main page of the website -->
+  <section id="mainpage">
   <div class="bg-white bg-cover bg-center bg-no-repeat">
     <!--
     This is the header section of the page
@@ -29,13 +30,13 @@
           When the image is clicked, the page will refresh due to the 'onclick="location.reload();"' attribute.
           The image displays the logo with specified height and width classes.
         -->
-        <a href="#" onclick="location.reload();">
+        <a href="#mainpage">
         <img src="/img/header_logo.png" alt="Logo" class="h-8 w-auto" />
         </a>
       </div>
       <div class="hidden lg:flex lg:gap-x-12">
         <a href="#about" class="nav-link text-sm/6 font-bold text-white text-shadow-lg/30 transition-transform duration-200 ease-in-out hover:scale-125">About me</a>
-        <a href="#portfolio" class="nav-link text-sm/6 font-bold text-white text-shadow-lg/30 transition-transform duration-200 ease-in-out hover:scale-125">Portfolio</a>
+        <a href="#portfolio_text" class="nav-link text-sm/6 font-bold text-white text-shadow-lg/30 transition-transform duration-200 ease-in-out hover:scale-125">Portfolio</a>
         <a href="#contact" class="nav-link text-sm/6 font-bold text-white text-shadow-lg/30 transition-transform duration-200 ease-in-out hover:scale-125">Contact</a>
         <a href="reviewpage.html" class="nav-link text-sm/6 font-bold text-white text-shadow-lg/30 transition-transform duration-200 ease-in-out hover:scale-125">Review</a>
       </div>
@@ -59,6 +60,7 @@
       </div>
     </div>
   </div>
+  </section>
 
 
   <!-- This sectiopn is about me -->
@@ -70,7 +72,7 @@
       <div class="mx-auto max-w-6xl py-32 sm:py-40 lg:py-0 flex items-center gap-24 lg:gap-x-24 min-h-screen z-20 relative">
         <!-- Text content -->
         <div class="flex-1 bg-center bg-slate-950/80 p-14 rounded-2xl shadow-2xl z-0 object-cover">
-          <h2 class="text-4xl font-bold text-gray-200">"Success is never guaranteed by effort — but without effort, success is impossible."</h2>
+          <h2 class="text-3xl font-bold text-gray-200">"Success is never guaranteed by effort — but without effort, success is impossible."</h2>
         </div>
         <!-- Image next to the text -->
         <img src="/img/aboutme_selfiepic.jpg" alt="Naytipat Photo" class="w-150 h-150 object-cover rounded-xl shadow-2xl">
@@ -80,15 +82,23 @@
   </section>
 
   <!-- Wallpaper Section -->
-  <section id="portfolio">
+  <section id = "wallpaper_space">
     <div class="relative">
       <img src="/img/portfolio_wallpaper_earthsurface.png" alt="Portfolio Wallpaper" class="absolute inset-0 w-full h-auto object-cover object-center z-20" />
       <div class="fixed z-10 inset-0 flex items-center justify-center animate-bounce" style="background-image: url('/img/portfolio_wallpaper_astronuat.png'); max-height: 20%; top: 55%; transform: translateY(-50%); background-size: cover; background-position: center;"></div>
       <img src="/img/portfolio_wallpaper_space.png" alt="Portfolio Wallpaper" class="absolute inset-0 w-full h-auto object-cover object-center z-0" style="opacity: 1;" />
       <img src="/img/portfolio_wallpaper_text.png" alt="Portfolio text" class="absolute inset-x-0 bottom-0 w-full h-auto object-cover object-center z-0">
-      <div class="relative z-10 flex items-center justify-center min-h-screen" style="height: auto;"></div>
+      <div class="relative z-10 items-center flex justify-center min-h-screen" style="height: auto;"></div>
+      <div class="relative z-20 w-full h-96"></div>
+      <div class="relative z-20 w-full h-96"></div>
+      <div class="relative z-20 w-full h-96"></div>
+      <section id="portfolio_text">
+        <h2 class="text-4xl font-bold text-white text-shadow-lg/30">Portfolio</h2>
+      <div class="relative z-20 w-full h-60"></div>
+      </section>
     </div>
   </section>
+  
   <!-- Contact Section -->
    
     
