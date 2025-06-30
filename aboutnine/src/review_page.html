@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Review Page - Facebook Style</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        font-family: "Roboto", Arial, sans-serif;
+        background: #f0f2f5;
+      }
+      .fb-header {
+        background: #1877f2;
+        color: #fff;
+        padding: 12px 24px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .fb-header .logo {
+        font-size: 2rem;
+        font-weight: bold;
+        letter-spacing: 1px;
+      }
+      .fb-header .search-bar input {
+        padding: 6px 12px;
+        border-radius: 20px;
+        border: none;
+        outline: none;
+        width: 200px;
+      }
+      .fb-header .profile {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .fb-header .profile img {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+      }
+      .container {
+        display: flex;
+        max-width: 1200px;
+        margin: 32px auto;
+        gap: 24px;
+      }
+      .sidebar {
+        flex: 1;
+        max-width: 250px;
+        background: #fff;
+        border-radius: 8px;
+        padding: 24px 16px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        height: fit-content;
+      }
+      .sidebar h2 {
+        font-size: 1.2rem;
+        margin-bottom: 16px;
+      }
+      .sidebar ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .sidebar ul li {
+        margin-bottom: 12px;
+        color: #1877f2;
+        cursor: pointer;
+      }
+      .main-content {
+        flex: 2.5;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      }
+      .post-box {
+        background: #fff;
+        border-radius: 8px;
+        padding: 16px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        margin-bottom: 16px;
+      }
+      .post-box textarea {
+        width: 100%;
+        border: none;
+        resize: none;
+        font-size: 1rem;
+        padding: 8px;
+        border-radius: 6px;
+        background: #f0f2f5;
+        outline: none;
+      }
+      .post-box button {
+        background: #1877f2;
+        color: #fff;
+        border: none;
+        padding: 8px 20px;
+        border-radius: 20px;
+        font-weight: bold;
+        margin-top: 8px;
+        cursor: pointer;
+        float: right;
+      }
+      .post {
+        background: #fff;
+        border-radius: 8px;
+        padding: 16px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        margin-bottom: 16px;
+      }
+      .post .post-header {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 8px;
+      }
+      .post .post-header img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+      }
+      .post .post-header .name {
+        font-weight: bold;
+        font-size: 1rem;
+      }
+      .post .post-content {
+        margin-bottom: 8px;
+      }
+      .post .post-actions {
+        display: flex;
+        gap: 16px;
+        color: #65676b;
+        font-size: 0.95rem;
+        cursor: pointer;
+      }
+      @media (max-width: 900px) {
+        .container {
+          flex-direction: column;
+          gap: 0;
+        }
+        .sidebar {
+          max-width: 100%;
+          margin-bottom: 24px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="fb-header">
+      <div class="logo">facebook</div>
+      <div class="search-bar">
+        <input type="text" placeholder="Search Facebook" />
+      </div>
+      <div class="profile">
+        <img
+          src="https://randomuser.me/api/portraits/men/32.jpg"
+          alt="Profile"
+        />
+        <span>John Doe</span>
+      </div>
+    </div>
+    <div class="container">
+      <aside class="sidebar">
+        <h2>Menu</h2>
+        <ul>
+          <li>Home</li>
+          <li>Reviews</li>
+          <li>Photos</li>
+          <li>About</li>
+          <li>Friends</li>
+        </ul>
+      </aside>
+      <main class="main-content">
+        <div class="post-box">
+          <textarea rows="3" placeholder="What's on your mind?"></textarea>
+          <button>Post</button>
+        </div>
+        <div class="post">
+          <div class="post-header">
+            <img
+              src="https://randomuser.me/api/portraits/women/44.jpg"
+              alt="User"
+            />
+            <div class="name">Jane Smith</div>
+          </div>
+          <div class="post-content">
+            Had a great experience! Highly recommended.
+          </div>
+          <div class="post-actions">
+            <span>Like</span>
+            <span>Comment</span>
+            <span>Share</span>
+          </div>
+        </div>
+        <div class="post">
+          <div class="post-header">
+            <img
+              src="https://randomuser.me/api/portraits/men/45.jpg"
+              alt="User"
+            />
+            <div class="name">Alex Brown</div>
+          </div>
+          <div class="post-content">
+            Service was fast and friendly. Will come back again.
+          </div>
+          <div class="post-actions">
+            <span>Like</span>
+            <span>Comment</span>
+            <span>Share</span>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
